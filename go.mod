@@ -1,3 +1,3 @@
 module github.com/serihiro/go-experiments
 
-go 1.21.3
+go 1.26.4

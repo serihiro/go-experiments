@@ -1,8 +1,16 @@
 {
     "go.lintTool": "golangci-lint",
     "go.lintFlags": [
-        "--config=${workspaceFolder}/.golangci.yml",
-        "--fast"
+        "--path-mode=abs",
+        "--fast-only"
+    ],
+    "go.formatTool": "custom",
+    "go.alternateTools": {
+    "customFormatter": "golangci-lint"
+    },
+    "go.formatFlags": [
+        "fmt",
+        "--stdin"
     ],
     "editor.formatOnSave": true
 }
