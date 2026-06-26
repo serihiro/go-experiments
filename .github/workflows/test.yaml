@@ -21,4 +21,4 @@ jobs:
         with:
           version: v2.12.2
       - name: Test with the Go CLI
-        run: make test
+        run: make test-all
